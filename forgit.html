@@ -1,0 +1,392 @@
+<html>
+    <head>
+        <title>My Portfolio</title>
+        <style>
+            .background
+{
+    background-image: url(port.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h2{
+    color: white;
+    font-size:xx-large;
+    padding-left: 20px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    padding: 0px;
+    text-transform: capitalize;
+}
+nav ul li a:hover{
+    color:deeppink;
+}
+.btn
+{
+    color: white;
+    background-color: deeppink;
+    padding: 10px 30px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: transform .2s;
+    margin-right: 15px;
+}
+.btn:hover{
+    transform: scale(1.1);
+    border: 2px solid white;
+}
+.content
+{
+    top: 50%;
+    left: 8%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+h1{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h3{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+h4{
+    font-size: 20px;
+    color: lightpink;
+    letter-spacing: 2px;
+}
+.userinput form
+{
+    width: 380px;
+    position: relative;
+}
+.userinput form input:first-child{
+    display: inline-block;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid lightpink;
+    border-radius: 30px;
+}
+.userinput form input:last-child
+{
+    color: white;
+    background-color: deeppink;
+    display: inline-block;
+    position: absolute;
+    padding: 10px 30px;
+    border-radius: 30px;
+    top: 4px;
+    right: 65px;
+    cursor: pointer;
+}
+.about
+{
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+    display: flex;
+}
+.about img{
+    height: auto;
+    width: 430px;
+    border: 4px solid deeppink;
+}
+.about-text
+{
+    width: 550px;
+    display: flex;
+}
+.main
+{
+    width: 1130px;
+    max-width: 95%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about h5{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin: 15px 0px 0px 55px;
+}
+.about h6{
+    color: white;
+    font-size: 23px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    margin: 15px 0px 0px 55px;
+}
+.about p{
+    color:lightpink;
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-left: 55px;
+    line-height: 28px;
+}
+.about button
+{
+    color: white;
+    background-color: deeppink;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 13px 30px;
+    margin-left: 55px;
+}
+.about button:hover{
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid deeppink;
+}
+.service
+{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    padding: 60px 0px;
+}
+.title p{
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    font-weight: bold;
+}
+.block
+{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    min-height: 400px;
+}
+.card
+{
+    height: 365px;
+    width: 335px;
+    background-color: #191919;
+    text-align: center;
+    padding: 20px 35px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+}
+.card i{
+    color: deeppink;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin: 20px 0px;
+}
+.card h6{
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 5px 0px;
+}
+.card p{
+    color:lightpink;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    word-spacing: 2px;
+    margin-top: 2px;
+}
+.card button
+{
+    color: white;
+    background-color: deeppink;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 30px;
+}
+.card button:hover{
+    cursor: pointer;
+    border: 2px solid white;
+}
+.last
+{
+    background-color: #191919;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.last p{
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin: 60px 0px;
+}
+.last button
+{
+    color: white;
+    background-color: deeppink;
+    padding: 15px 40px;
+    border-radius: 30px ;
+    margin-left: 250px;
+    font-weight: bold;
+}
+.last button:hover{
+    cursor: pointer;
+}
+.end
+{
+    background-color: black;
+    height: 50vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.end p{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+}
+.end h6{
+    color: white;
+    /*line-height: 35px;*/
+    font-size: 20px;
+    text-align: center;
+    font-weight: 100;
+    word-spacing: 3px;
+}
+.end i{
+    color: deeppink;
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    margin: 5px 0px;
+}
+.end i:hover{
+    cursor: pointer;
+}
+.end h5{
+    color: deeppink;
+    text-align: center;
+    word-spacing: 2px;
+    margin-top: 25px;
+}
+        </style>
+    </head>
+    <body>
+
+        <div class="background">
+            <nav>
+                <h2>Portfo<span style="color:deeppink;">lio</span></h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <a class="btn" href="#">Subscribe</a>
+            </nav>
+
+            <div class="content">
+                <h4>Hello, my name is</h4>
+                <h1>Raghav <span style="color:deeppink;">Johari</span></h1>
+                <h3>I'am a Web Developer</h3>
+                <div class="userinput">
+                    <form>
+                        <input type="email" name="email" id="mail" placeholder="Enter your Email">
+                        <input type="submit" name="submit" value="Let's Start">
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <section class="about">
+            <div class="main">
+                <img src="profile.jpg">
+                <div class="abouttext">
+                    <h5>About Me</h5>
+                    <h6>Developer <span style="color: deeppink;">& Designer</span></h6>
+                    <p> I am a front-end web developer. I can provide clean code and pixel
+                        perfect design. I also make the website more and more interactive with 
+                        web animations. A responsive design makes your website 
+                        accessible to all users, regardless of their device. I am fond of
+                        developing web-pages as this makes me more experienced in developing
+                        best of it.
+                    </p>
+                    <button type="button">Let's Talk</button>
+                </div>
+            </div>
+        </section>
+       
+        <div class="service">
+            <div class="title">
+                <p><i>Our Services</i></p>
+            </div>
+            <div class="block">
+                <div class="card">
+                    <i class="fa-solid fa-bars"></i>
+                    <h6>Main Focus</h6>
+                    <p>Every Website Should be built with two primary goals:
+                        Firstly, it needs to work across all devices.Secondly,
+                        it needs to be as fast as possible.
+                    </p>
+                    <button type="button">Know More</button>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-user"></i>
+                    <h6>User</h6>
+                    <p>As a new user you can also learn developing webpages just like this by
+                        pressing the button below. I will help you in developing to the best of my.
+                    </p>
+                    <button type="button">Help Me</button>
+                </div>
+                <div class="card">
+                    <i class="fa-regular fa-bell"></i>
+                    <h6>Join Us</h6>
+                    <p>Press the button below to join our team and share your latest ideas and views
+                        which should be focused and needs improvement.
+                    </p>
+                    <button type="button">Join</button>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <div>
+                <p>Let Me Get You A Beautiful Website</p>
+                <button type="button">Hire Me</button>
+            </div>
+        </div>
+
+        <div class="end">
+            <div>
+                <p>Raghav Johari</p>
+                <h6>For more HTML, CSS and coding tutorial-
+                    <br>please click on the button below to follow</h6>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h5>CopyRight By Raghav Johari</h5>
+            </div>
+        </div>
+
+    </body>
+</html>
